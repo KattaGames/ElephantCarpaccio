@@ -11,8 +11,7 @@ import XCTest
 
 class ItemTests: XCTestCase {
     
-    func test_item_sut() {
-        
+    func test_item_sut_not_nil() {
         let item = Item()
         XCTAssertNotNil(item)
     }
