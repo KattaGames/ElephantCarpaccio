@@ -13,6 +13,7 @@
 		B2A6B7DA22CF790F00D08C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A6B7D922CF790F00D08C70 /* Assets.xcassets */; };
 		B2A6B7DD22CF790F00D08C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6B7DB22CF790F00D08C70 /* LaunchScreen.storyboard */; };
 		B2A6B7E822CF791000D08C70 /* ElephantCarpaccioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7E722CF791000D08C70 /* ElephantCarpaccioTests.swift */; };
+		B2A6B7F422CF9DA900D08C70 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B2A6B7E322CF791000D08C70 /* ElephantCarpaccioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElephantCarpaccioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A6B7E722CF791000D08C70 /* ElephantCarpaccioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElephantCarpaccioTests.swift; sourceTree = "<group>"; };
 		B2A6B7E922CF791000D08C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,8 @@
 		B2A6B7D122CF790D00D08C70 /* ElephantCarpaccio */ = {
 			isa = PBXGroup;
 			children = (
+				B2A6B7F522CF9F4D00D08C70 /* Layers */,
 				B2A6B7D222CF790D00D08C70 /* AppDelegate.swift */,
-				B2A6B7D422CF790D00D08C70 /* ViewController.swift */,
 				B2A6B7D622CF790D00D08C70 /* Main.storyboard */,
 				B2A6B7D922CF790F00D08C70 /* Assets.xcassets */,
 				B2A6B7DB22CF790F00D08C70 /* LaunchScreen.storyboard */,
@@ -92,8 +94,41 @@
 			children = (
 				B2A6B7E722CF791000D08C70 /* ElephantCarpaccioTests.swift */,
 				B2A6B7E922CF791000D08C70 /* Info.plist */,
+				B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */,
 			);
 			path = ElephantCarpaccioTests;
+			sourceTree = "<group>";
+		};
+		B2A6B7F222CF9B8500D08C70 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B2A6B7D422CF790D00D08C70 /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B2A6B7F522CF9F4D00D08C70 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				B2A6B7F222CF9B8500D08C70 /* Presentation */,
+				B2A6B7F722CF9F5E00D08C70 /* Business */,
+				B2A6B7F622CF9F5100D08C70 /* Models */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		B2A6B7F622CF9F5100D08C70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2A6B7F722CF9F5E00D08C70 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A6B7F422CF9DA900D08C70 /* ItemTests.swift in Sources */,
 				B2A6B7E822CF791000D08C70 /* ElephantCarpaccioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
