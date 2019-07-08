@@ -15,6 +15,7 @@
 		B2A6B7F422CF9DA900D08C70 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */; };
 		B2A6B7F922CF9F9F00D08C70 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7F822CF9F9F00D08C70 /* Item.swift */; };
 		B2A6B7FF22D338F400D08C70 /* CalculatePriceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7FE22D338F400D08C70 /* CalculatePriceServiceTests.swift */; };
+		B2A6B80122D33A8E00D08C70 /* CalculatePriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B80022D33A8E00D08C70 /* CalculatePriceService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		B2A6B7F822CF9F9F00D08C70 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B2A6B7FE22D338F400D08C70 /* CalculatePriceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePriceServiceTests.swift; sourceTree = "<group>"; };
+		B2A6B80022D33A8E00D08C70 /* CalculatePriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePriceService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		B2A6B7F722CF9F5E00D08C70 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B2A6B80022D33A8E00D08C70 /* CalculatePriceService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A6B80122D33A8E00D08C70 /* CalculatePriceService.swift in Sources */,
 				B2A6B7D522CF790D00D08C70 /* ViewController.swift in Sources */,
 				B2A6B7F922CF9F9F00D08C70 /* Item.swift in Sources */,
 				B2A6B7D322CF790D00D08C70 /* AppDelegate.swift in Sources */,

@@ -16,4 +16,14 @@ class CalculatePriceServiceTests: XCTestCase {
         XCTAssertNotNil(sut)
     }
     
+    func test_calculate_tax_rate(){
+        let sut = CalculatePriceService()
+        let taxtByCode = 0.0
+        let rate = sut.calculateTaxRateByCode(code: "code")
+        XCTAssertEqual(rate, taxtByCode)
+        
+        
+        
+    }
 }
+
