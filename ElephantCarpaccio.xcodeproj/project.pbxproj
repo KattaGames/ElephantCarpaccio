@@ -12,7 +12,6 @@
 		B2A6B7D822CF790D00D08C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6B7D622CF790D00D08C70 /* Main.storyboard */; };
 		B2A6B7DA22CF790F00D08C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2A6B7D922CF790F00D08C70 /* Assets.xcassets */; };
 		B2A6B7DD22CF790F00D08C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A6B7DB22CF790F00D08C70 /* LaunchScreen.storyboard */; };
-		B2A6B7E822CF791000D08C70 /* ElephantCarpaccioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7E722CF791000D08C70 /* ElephantCarpaccioTests.swift */; };
 		B2A6B7F422CF9DA900D08C70 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */; };
 		B2A6B7F922CF9F9F00D08C70 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B7F822CF9F9F00D08C70 /* Item.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		B2A6B7DC22CF790F00D08C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2A6B7DE22CF790F00D08C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2A6B7E322CF791000D08C70 /* ElephantCarpaccioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElephantCarpaccioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2A6B7E722CF791000D08C70 /* ElephantCarpaccioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElephantCarpaccioTests.swift; sourceTree = "<group>"; };
 		B2A6B7E922CF791000D08C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		B2A6B7F822CF9F9F00D08C70 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -94,9 +92,8 @@
 		B2A6B7E622CF791000D08C70 /* ElephantCarpaccioTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2A6B7E722CF791000D08C70 /* ElephantCarpaccioTests.swift */,
 				B2A6B7E922CF791000D08C70 /* Info.plist */,
-				B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */,
+				B2A6B7FA22D337DE00D08C70 /* Models */,
 			);
 			path = ElephantCarpaccioTests;
 			sourceTree = "<group>";
@@ -132,6 +129,14 @@
 			children = (
 			);
 			path = Business;
+			sourceTree = "<group>";
+		};
+		B2A6B7FA22D337DE00D08C70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2A6B7F322CF9DA900D08C70 /* ItemTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A6B7F422CF9DA900D08C70 /* ItemTests.swift in Sources */,
-				B2A6B7E822CF791000D08C70 /* ElephantCarpaccioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
