@@ -18,12 +18,9 @@ class CalculatePriceServiceTests: XCTestCase {
     
     func test_calculate_tax_rate(){
         let sut = CalculatePriceService()
-        let taxtByCode = 0.0
-        let rate = sut.calculateTaxRateByCode(code: "code")
+        let taxtByCode = 6.85
+        let rate = sut.calculateTaxRateByCode(code: "UT")
         XCTAssertEqual(rate, taxtByCode)
-        
-        
-        
     }
 }
 
