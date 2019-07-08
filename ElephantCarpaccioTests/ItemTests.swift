@@ -16,5 +16,12 @@ class ItemTests: XCTestCase {
         XCTAssertNotNil(item)
     }
     
-    
+    func test_accept_input_item() {
+        let label = "label"
+        let quantity = 2.0
+        let price = 12.0
+        let codeString = "LetterCode"
+        let item = Item(label: "label",quantity: quantity,price: price, code: codeString)
+        XCTAssertNotNil(item)
+    }
 }
