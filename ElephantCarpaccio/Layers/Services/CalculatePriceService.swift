@@ -8,6 +8,48 @@
 
 import Foundation
 
+protocol TaxRateProtocol {
+    
+}
+
+enum TaxRateEnum{
+    case UT
+    case NV
+    case TX
+    case AL
+    case CA
+    
+    func getStringValue() -> String{
+        switch self {
+        case .UT:
+            return "UT"
+        case .NV:
+            return "NV"
+        case .TX:
+            return "TX"
+        case .AL:
+            return "AL"
+        case .CA:
+            return "CA"
+        }
+    }
+    
+    func getRate() -> Double{
+        switch self {
+        case .UT:
+            return 6.85
+        case .NV:
+            return 8.00
+        case .TX:
+            return 6.25
+        case .AL:
+            return 4.00
+        case .CA:
+            return 8.25
+        }
+    }
+    
+}
 
 class CalculatePriceService {
     
@@ -30,5 +72,5 @@ class CalculatePriceService {
         }
         return taxRate
     }
-
+    
 }
