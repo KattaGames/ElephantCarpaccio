@@ -8,33 +8,45 @@
 
 import Foundation
 
-protocol TaxRateProtocol {
-    
+enum TaxtRateError:Error{
+        case unknown
 }
 
-enum TaxRateEnum{
+protocol TaxRateProtocol {
+    var code: String {get}
+    var rate: Double {get}
+}
+
+enum TaxRateEnum: String, TaxRateProtocol{
+    
     case UT
     case NV
     case TX
     case AL
     case CA
     
-    func getStringValue() -> String{
-        switch self {
-        case .UT:
-            return "UT"
-        case .NV:
-            return "NV"
-        case .TX:
-            return "TX"
-        case .AL:
-            return "AL"
-        case .CA:
-            return "CA"
+    init(code: String) throws{
+        switch code {
+        case "UT":
+            self = .UT
+        case "NV":
+            self = .NV
+        case "TX":
+            self = .TX
+        case "AL":
+           self = .AL
+        case "CA":
+            self = .CA
+        default:
+            throw TaxtRateError.unknown
         }
     }
     
-    func getRate() -> Double{
+    var code: String{
+        return self.rawValue
+    }
+    
+    var rate: Double{
         switch self {
         case .UT:
             return 6.85
@@ -48,29 +60,15 @@ enum TaxRateEnum{
             return 8.25
         }
     }
-    
 }
 
 class CalculatePriceService {
     
-    func calculateTaxRateByCode(code: String) -> Double {
-        var taxRate = 0.0
+    func calculateTaxRateByCode(code: String) throws -> Double{
         
-        switch code {
-        case "UT":
-            taxRate = 6.85
-        case "NV":
-            taxRate = 8.00
-        case "TX":
-            taxRate = 6.25
-        case "AL":
-            taxRate = 4.00
-        case "CA":
-            taxRate = 8.25
-        default:
-            break
-        }
-        return taxRate
+        let taxRateProtocol = try TaxRateEnum(code:code)
+        
+        return taxRateProtocol.rate
     }
     
 }
