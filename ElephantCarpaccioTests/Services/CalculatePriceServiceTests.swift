@@ -55,6 +55,12 @@ class CalculatePriceServiceTests: XCTestCase {
         }
     }
     
+    func test_calculate_total_item_with_tax(){
+        let sut = CalculatePriceService()
+        let items = [Item(label: "label1UT", quantity: 2, price: 20.0, code: "UT"),Item(label: "label2NV", quantity: 2, price: 20.0, code: "NV")]
+        sut.totalPricesWithoutTax()
+        
+    }
     
     
 }

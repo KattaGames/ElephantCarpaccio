@@ -65,9 +65,7 @@ enum TaxRateEnum: String, TaxRateProtocol{
 class CalculatePriceService {
     
     func calculateTaxRateByCode(code: String) throws -> Double{
-        
         let taxRateProtocol = try TaxRateEnum(code:code)
-        
         return taxRateProtocol.rate
     }
     
